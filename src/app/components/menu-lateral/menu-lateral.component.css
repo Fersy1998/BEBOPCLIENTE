@@ -1,0 +1,88 @@
+* {
+    box-sizing:border-box;
+  }
+  h1{
+    font-family: Gugi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    letter-spacing: -0.017em;
+    
+    color: #FFFFFF;
+  }
+  a {
+    text-decoration:none;
+  }
+  /********************\
+    $Layout ☰
+  \********************/
+  
+  /*Damos estilos al menú*/
+  .nav {
+    text-align: center;
+    width:50%;
+    height:100%;
+    top:0;
+    display:none; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+    z-index: -1000;
+    padding-top:10em;
+    background-color: rgb(0, 0, 0);
+    border-right:4px solid rgb(207, 50, 115);
+    transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+  }
+     /*Estilos de los li del menú*/
+     .nav__item {
+       display:block;
+       width:96%;
+       margin:0 auto;
+       line-height:2;
+       position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+       border-bottom:.5px solid rgba(59, 62, 61, 1);
+       border-top:.5px solid rgba(59, 62, 61, 1);
+       background-color:transparent;
+       font-family: 'Lato', sans-serif;
+       text-align:center;
+       color:rgba(221, 231, 228, 1);
+     }
+    /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+    .menu-toogle {
+      position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+      width: 35px;
+      line-height:1.1;
+      text-align:center;
+      top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+      left: 8px; 
+      border-radius:3px;
+      background-color: #000000;
+      transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+      z-index:10;
+    }
+      /*Añadimos la haburguesa y le damos unos estilos*/
+      .menu-toogle::before {
+        content:"☰";
+        font-size:32px;
+        color:white;
+      }
+  
+  
+      /*Estos son los estilos que le dan la funcionalidad al menú*/
+      /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+      .checkbox {
+        display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+      }
+      .checkbox:checked ~ .nav {
+        left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+        position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+        display: inline-block;
+        z-index: 100;
+      }
+      .checkbox:checked ~ .main-w {
+        margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+      }
+      .checkbox:checked ~ .menu-toogle { 
+        left:208px;
+        position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+      }

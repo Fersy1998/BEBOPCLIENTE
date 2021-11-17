@@ -1,0 +1,69 @@
+.store{
+    font-family: Gugi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    letter-spacing: -0.017em;
+    
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.date_time{
+    
+    font-family: Gugi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    /* identical to box height */
+    
+    letter-spacing: -0.017em;
+    
+    color: #CACACA;
+
+}
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #d44f92;
+    color:#8498AF;
+    font-size: 1em;
+    transition: .4s;
+    
+  }
+  
+.details{
+    background: #d44f92;
+    border-radius: 30px;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: .4s;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+  
+    
+  }
+  .row h3{
+    font-size: 0.7em;
+  }
+  .col, h3{
+    margin:0;
+    border:0;
+    padding:0;
+  }
+  .row{
+    box-shadow: 0.13em #8498AF;
+    
+  }
+  .estado{
+    background-color: rgb(106, 173, 106);
+  }
+.container{
+  z-index: -1;
+  position: relative;
+}

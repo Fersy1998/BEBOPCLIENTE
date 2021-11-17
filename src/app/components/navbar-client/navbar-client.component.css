@@ -1,0 +1,180 @@
+@font-face {
+    font-family:Obstacle BRK;
+    src: url(../../../../src/assets/fuentes/obstacle.ttf);
+}
+.login{
+  background: #c9327d;
+  border-radius: 30px;
+  padding: 0.2em;
+  width: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .8rem;
+  transition: .4s;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+    
+
+}
+.pink-line{
+    height: 14px;
+    width:100%;
+    border:0;
+    margin:0;
+    background: #FF33C6;
+}
+.container-fluid{
+    padding: 1em 1em 0em 1em;
+    height: 10em;
+    left: 0px;
+    top: 0px;
+}
+.w-100 h1{
+    font-size: 0.8em;
+}
+.title{
+  
+    color: #FFA3E1;
+    font-size: 10rem;
+}
+
+.contenedor-logo{
+    font-family: Obstacle BRK;
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 0 0 0.2em #8f2061;
+    animation: contenedor-logo 1s ease infinite;
+    -moz-animation: contenedor-logo 1s ease infinite;
+    -webkit-animation: contenedor-logo 1s ease infinite;
+    width: 1em;
+    text-align: center;
+    height: 1em;
+    box-shadow: 0 0 0.06em 0.05em #cc3480,0 0 0.1em 0.01em #a81e7f inset;
+    border-color: #fff;
+    
+}
+
+.slogan{
+    font-family:Obstacle BRK;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 0 0 0.5em #8f2061;
+    margin-top: 0.5em;
+    animation: fuente_logo 1s ease infinite;
+    -moz-animation: fuente_logo 1s ease infinite;
+    -webkit-animation: fuente_logo 1s ease infinite;
+}
+@keyframes contenedor-logo {
+    0%,
+    100% {
+        text-shadow: 0 0 0.5em #da0557,  0 0 .4em #c590bc, .2em .2em  0.5em #ff91cf;
+        color: #fff;
+        box-shadow: 0 0 0.06em 0.05em #ff3f9f,0 0 0.06em 0.05em #dd5f9e,0 0 0.1em 0.01em #f1a5db inset;
+    }
+    50% {
+        text-shadow: 0 0 .2em #b8437d, .2em .2em  0.5em #ac1f82;
+        color: #f797c7;
+        box-shadow: 0 0 0.06em 0.05em #c9327d,0 0 0.1em 0.01em #ec3bb7 inset;
+    }
+}
+@keyframes fuente_logo {
+    0%,
+    100% {
+        text-shadow: 0 0 0.5em #da0557,  0 0 .4em #c590bc, .2em .2em  0.5em #ff91cf;
+        color: #fff;
+    }
+    50% {
+        text-shadow: 0 0 .2em #8f0047, .2em .2em  0.5em #ac1f82;
+        color: #f797c7;
+    }
+}
+@media screen and (min-height:1400px){
+    .container-fluid{
+        height: 30vh !important;
+    }
+}
+@media screen and (max-height:700px){
+    #quote{
+        display: none;
+    }
+}
+@media screen and (min-height:830px){
+    #quote{
+        font-size: 3em !important;
+    }
+}
+@media screen and (max-height:850px){
+    #quote{
+        font-size: 2em !important;
+    }
+}
+@media screen and (max-width:500px){
+    #quote{
+        font-size:1.5em !important;
+    }
+}
+@media screen and (max-width:500px){
+    #quote{
+        font-size:1.5em !important;
+    }
+}
+*{
+    font-family: Arial;
+  }
+nav{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    margin-top:0;
+    margin-bottom: 0;
+    color:white !important;
+}
+.fixed-top{
+    margin-bottom: 0;
+}
+
+li svg{
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    color: white;
+}
+li{
+    width: 100%;
+}
+li{
+    margin-right: 0;
+    padding: 1.5em;
+    font-size: 1em;
+    background-color: #000000;
+}
+li:hover{
+    background-color: #b8437d;
+    width: 100%;
+    color: white;
+}
+.navbar-toggler img{
+    width: 3em;
+    
+}
+.navbar-toggler {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a span{
+    color: white;
+}
+.contenedor-logo h1{
+    font-family: Obstacle BRK;
+    padding-top: 0.3em;
+}

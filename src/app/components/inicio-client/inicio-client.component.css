@@ -1,0 +1,175 @@
+
+h1{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.017em;
+    
+    color: #000000;
+}
+main{
+    text-align: center;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #c9327d;
+    border-right: none;
+    padding: 0.2em;
+    height: 3em;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #c9327d;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 2.1em;
+    border: 0.1em solid #c9327d;
+    background: #c9327d;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .wrap{
+    width: 70%;
+    top: 0.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .tittle{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.017em;
+    color: #000000;
+    margin-top: 0.8em;
+  }
+  
+  /*cards*/
+  .cards{
+    padding: 1em;;
+  }
+  .card {
+    overflow: hidden;
+    border: 1px solid lavender;
+    box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
+    margin:1em
+ }
+ .card__info--title, .card__info--price{
+    padding-left: 1em;
+    padding-right: 1em;
+ }
+ 
+ .card__image img {
+    max-width: 120%;
+    border-bottom-right-radius: 30px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin:0;
+ }
+ 
+ .card__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+ }
+ .card__info h3 {
+    font-size: 1em;
+    font-weight: 700;
+ }
+ .card__info p {
+    font-size: 1em;
+    font-weight: 600;
+ }
+ .card__info--price {
+    
+    text-align: right;
+    color: orangered;
+    font-size: 1em;
+    margin:0
+ }
+ .rect2 {
+    bottom: 315px;
+    right: 15px;
+    width: 325px;
+    height: 230px;
+    border: 1px solid lavender;
+    border-radius: 0 0px 80px 0;
+    background-image: url();
+    transform: rotate(10deg);
+    object-fit: cover;
+ }
+ .checked {
+    color: #ffd700;
+ }
+ 
+ ::-webkit-scrollbar {
+    width: 8px;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+ }
+ .card__image, picture, img, .card{
+    margin: 0;
+    border: 0;
+    padding: 0;
+ }
+
+ input{
+    width: 100%;
+    border: 1px solid #000000;
+    color:#8498AF;
+    font-size: .9rem;
+    transition: .4s;
+    
+  }
+  
+  [type="button"]{
+    background: #000000;
+    padding: auto;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: .4s;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+  
+    
+  }
+  .col, .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+ .row, .cards, .container{
+    padding: auto;
+ }
+
+
+

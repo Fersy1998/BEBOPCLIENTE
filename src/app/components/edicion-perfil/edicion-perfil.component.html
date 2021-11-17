@@ -1,0 +1,94 @@
+
+<app-navbar-client></app-navbar-client>
+<app-menu-lateral></app-menu-lateral>
+<div class="container">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 edit_information">
+        <form action=""  method="POST">	
+            <h3 class="text-center">Editar información personal</h3>
+            <div class="center">
+                <picture>
+                    <img src="../../../assets/img/Ellipse 432.png" class="img-fluid  img-thumbnail img-circle" style="border-radius: 50%;"alt="...">
+                </picture>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Primer nombre:</label>
+                        <input type="text" name="first_first_name" class="form-control" value="" required >
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Segundo nombre:</label>
+                        <input type="text" name="first_second_name" class="form-control" value="" required >
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Primer apellido: </label>
+                        <input type="text" name="last_first_name" class="form-control" value="" required>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Segundo apellido: </label>
+                        <input type="text" name="last_second_name" class="form-control" value="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Correo electrónico:</label>
+                        <input type="email" name="email" class="form-control" value="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Teléfono:</label>
+                        <input type="tel" name="phone" class="form-control" value="" required pattern=[0-9]{10}>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Fecha de nacimiento:</label>
+                        <input type="date" name="birthday" class="form-control" value="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Sexo:</label>
+                        <select name="gender" class="form-control" value="" required>
+                            <option value="Male">Maculino</option>
+                            <option value="Female">Femenino</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        <label class="profile_details_text">Descripción:</label>
+                        <textarea placeholder="Añade una descripción..." class="form-control w-100" rows="4" ></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 submit">
+                    <div class="form-group">
+                        <input type="button" class="btn btn-success" value="Guardar">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
